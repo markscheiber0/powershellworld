@@ -1,0 +1,17 @@
+{
+  "_note": "The model may tap ONLY these zones, by name, and only when the user's message names the zone. Screen is 720 wide x 1280 tall. If requires_text is set, the script reads the screen first and taps the center of the matching text inside 'area'; if it is not found, nothing is tapped. Restart ldagent.ps1 after editing.",
+  "zones": [
+    {
+      "name": "giveaway_box",
+      "requires_text": "Giveaway",
+      "area": { "x_min": 500, "x_max": 720, "y_min": 100, "y_max": 260 },
+      "description": "Black 'Giveaway' box at the top right of a live stream. Opens the giveaway panel."
+    },
+    {
+      "name": "enter_giveaway",
+      "requires_text": "Enter Giveaway",
+      "area": { "x_min": 0, "x_max": 720, "y_min": 150, "y_max": 400 },
+      "description": "White 'Enter Giveaway' button in the open giveaway panel. If you are not yet following the host it reads 'Follow Host & Enter Giveaway' and also follows the host."
+    }
+  ]
+}
